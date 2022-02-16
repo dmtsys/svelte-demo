@@ -1,0 +1,28 @@
+{
+  "name": "dmt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "uniqpath",
+  "license": "ISC",
+  "exports": {
+    "./common": "./_dmt_deps/common",
+    "./notify": "./_dmt_deps/notify",
+    "./search": "./_dmt_deps/search",
+    "./connectome": "./_dmt_deps/connectome",
+    "./connectome-stores": "./_dmt_deps/connectome-stores"
+  },
+  "dependencies": {
+    "@lukeed/uuid": "^2.0.0",
+    "connectome": "^0.1.7",
+    "cookie": "^0.4.2",
+    "hyperbee": "^1.7.0",
+    "hypercore": "^10.0.0-alpha.24",
+    "markdown-hljs": "^0.1.11",
+    "stores-x": "^0.0.872"
+  }
+}
