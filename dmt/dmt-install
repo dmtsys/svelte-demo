@@ -53,9 +53,8 @@ else
     cp "$SOURCE/dmt/variables/package.json" .
 
     echo "
-    import dmt from 'dmt/common';
+    import { express  } from 'dmt/common';
     import { handler } from './handler';
-    const { express } = dmt;
 
     const app = express();
 
