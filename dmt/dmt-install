@@ -32,16 +32,12 @@ else
     # after build scripts
     node dmt/resetBase.cjs
 
-    # node dmt/fix-path.cjs
-
-
     # dmt apps dir
     DMT_APPS="$HOME/.dmt/user/apps"
 
     # DMT-APPS sync
     SOURCE_HOOK="${SOURCE}${hook}"
     SOURCE_PUBLIC="${SOURCE}${build}"
-
 
     # sync backend
     if [ -d $SOURCE_HOOK ]; then
