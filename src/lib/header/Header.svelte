@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
-	import { base, assets } from '$app/paths';
+	import { base as _base } from '$app/paths';
+
+	const base = import.meta.env.VITE_BASE || _base;
 </script>
 
 <header>

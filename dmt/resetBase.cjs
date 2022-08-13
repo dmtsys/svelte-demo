@@ -11,7 +11,7 @@ const AddedConfig = `[\\t\\n\\ ]*paths\\:[\\ ]{[\\t\\n\\ ]*base:[\\ ]*\\'${app_b
 const restore = (filePath) => {
 	if (fs.existsSync(filePath)) {
 		svelteConfigFile = fs.readFileSync(filePath, 'utf8');
-		svelteConfigFile = svelteConfigFile.replace(RegExp(AddedConfig), `\n\t`);
+		svelteConfigFile = svelteConfigFile.replace(RegExp(AddedConfig), `\n\t\t`);
 		fs.writeFileSync(filePath, svelteConfigFile);
 
 		console.log(`restored svelte.config.cjs`);

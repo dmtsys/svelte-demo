@@ -9,7 +9,9 @@ app_base="$(node dmt/variables/app_base.cjs)"
 build="$(node dmt/variables/build.cjs)"
 hook="$(node dmt/variables/hook.cjs)"
 
-
+export VITE_BASE="/$app_base"
+export VITE_Build=$build
+export VITE_HOOK=$hook
 
 source ~/.dmt/etc/.bash_aliases_bundle # dirsync
 
