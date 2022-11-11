@@ -8,12 +8,10 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({ out: 'dmt-hook' }),
-
-		// Override http methods in the Todo forms
-		methodOverride: {
-			allowed: ['PATCH', 'DELETE']
-		}
+		adapter: adapter(),
+		csrf: {
+			checkOrigin: false
+		  },
 	}
 };
 

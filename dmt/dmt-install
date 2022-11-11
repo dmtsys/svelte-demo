@@ -27,7 +27,7 @@ else
     node dmt/editBase.cjs
 
     # build
-    npm run build
+    pnpm build
 
     # after build scripts
     node dmt/resetBase.cjs
@@ -46,17 +46,9 @@ else
     dirsync --exclude node_modules "$SOURCE_HOOK" .
 
     echo "
-    import { express  } from 'dmt/common';
-    import { override } from './server';
-
-    override({ paths: { base: '', assets: '/${app_base}' } })
-
-    const app = express();
-
     export async function init(program) {
       const { handler } = await import('./handler');
-      app.use('/${app_base}', handler);
-      return { express: app };
+      return { express: handler };
     }
     ">index.js
 

@@ -1,7 +1,6 @@
 {
-	"app_base": "kit",
+	"app_base": "hiya",
 	"manifest": "app.webmanifest",
-	"app_html": "src/app.html",
 	"build": "build",
-	"hook": "dmt-hook"
+	"hook": "build"
 }
