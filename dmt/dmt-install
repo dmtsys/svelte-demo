@@ -47,7 +47,7 @@ else
 
     echo "
     export async function init(program) {
-      const { handler } = await import('./handler');
+      const { handler } = await import('./handler.js');
       return { express: handler };
     }
     ">index.js
