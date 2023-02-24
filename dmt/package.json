@@ -10,11 +10,11 @@
   "author": "uniqpath",
   "license": "ISC",
   "exports": {
-    "./common": "./_dmt_deps/common",
-    "./notify": "./_dmt_deps/notify",
-    "./search": "./_dmt_deps/search",
-    "./connectome": "./_dmt_deps/connectome",
-    "./connectome-stores": "./_dmt_deps/connectome-stores"
+    "./common": "./_dmt_deps/common/index.js",
+    "./notify": "./_dmt_deps/notify/index.js",
+    "./search": "./_dmt_deps/search/index.js",
+    "./connectome": "./_dmt_deps/connectome/index.js",
+    "./connectome-stores": "./_dmt_deps/connectome-stores/index.js"
   },
   "dependencies": {
     "@lukeed/uuid": "^2.0.0",
