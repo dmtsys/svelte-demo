@@ -15,14 +15,11 @@
 
 # installation
 
-in your project's root directory
+in your project's root directory edit dmt/settings.json before installing the app, then run:
 
 ```bash
-npx degit anyass3/dmt-installer#main dmt
-node dmt/setup.cjs
+dmt integrate
 ```
-
-then edit dmt/settings.json before installing the app
 
 now to install the dmt-app
 

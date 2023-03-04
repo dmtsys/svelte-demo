@@ -1,4 +1,4 @@
 {
-	"app_base": "hiya",
+	"app_base": "svelte-demo",
 	"hook": "build"
 }
