@@ -12,7 +12,7 @@ pnpm install
 dmt integrate
 ```
 
-Now open `localhost:8888/svelte-demo` (will move to port `:7777` a bit later).
+Now open `localhost:7777/svelte-demo`.
 
 
 ![Screen](./dmt-install/screen.jpg)
