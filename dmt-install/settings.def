@@ -1,0 +1,2 @@
+base: svelte-demo
+build: build
