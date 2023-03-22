@@ -1,2 +1,3 @@
-base: svelte-demo
-build: build
+base:  svelte-demo  #where the app will be mounted on the url path, for example: localhost:7777/dmt-search
+build:  build  #directory with frontend result which is synced into `~/.dmt/user/apps` (user) or `~/.dmt-here/apps` (device)
+target:  user  #device or user
